@@ -2,9 +2,9 @@ let Celsius = 0
 let Fahrenheit = 0
 basic.forever(function () {
     Celsius = input.temperature()
-    Fahrenheit = Celsius * (1.8 + 32)
+    Fahrenheit = Celsius * 1.8 + 32
     basic.showNumber(Fahrenheit)
-    if (Fahrenheit >= 14 && Fahrenheit <= -22) {
+    if (Fahrenheit <= 14 && Fahrenheit >= -22) {
         basic.showString("Stay at home, there is heavy snow.")
         basic.showLeds(`
             # . . . #
